@@ -1,6 +1,6 @@
-# ScienceStyle for MODX Revo
+# ScienceStyle for MODX Evo
 
-A manager theme based on RevoStyle for MODX Revo.
+A manager theme based on RevoStyle for MODX Evo.
 
 ## Requirements
 
