@@ -4,7 +4,7 @@ A manager theme based on RevoStyle for MODX Evo.
 
 ## Requirements
 
- * MODX Revolution 1.0.5 or greater.
+ * MODX Evolution 1.0.5 or greater.
 
 ## Installation
 
