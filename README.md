@@ -1,6 +1,6 @@
 # ScienceStyle for MODX Evo
 
-![screenshot](screenshot.png)
+![screenshot](https://raw.github.com/manse/ScienceStyle/master/screenshot.png)
 
 A manager theme based on RevoStyle for MODX Evo.
 
@@ -10,8 +10,8 @@ A manager theme based on RevoStyle for MODX Evo.
 
 ## Installation
 
- * Login your MODX manager then go to Tools > Configuration > Interface & Features > Manager Theme. Choose "ScienceStyle" and save.
  * Upload directory "ScienceStyle" to "/manager/media/style/"
+ * Login your MODX manager then go to Tools > Configuration > Interface & Features > Manager Theme. Choose "ScienceStyle" and save.
 
 ## Contributor
 
