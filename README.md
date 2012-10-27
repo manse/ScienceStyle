@@ -1,5 +1,7 @@
 # ScienceStyle for MODX Evo
 
+[!(screenshot.png)]
+
 A manager theme based on RevoStyle for MODX Evo.
 
 ## Requirements
