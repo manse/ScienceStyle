@@ -8,6 +8,7 @@
  * Version:        1.1
  * MODx version:   1.0.3
 */
+
 $style_path = 'media/style/' . $modx->config['manager_theme'] . '/images/';
 
 // Tree Menu Toolbar

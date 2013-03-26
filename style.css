@@ -623,7 +623,8 @@ input.submit {
 	border-bottom:none;
 		text-shadow: 0px 1px 0px #FFF;
 }
-	.tab-page .sectionHeader {
+	.tab-page .sectionHeader,
+	.ui-tabs .sectionHeader {
 		margin: 2px 3px 0;
 	}
 	.rtl .sectionHeader {
@@ -637,7 +638,8 @@ input.submit {
 	display: block;
 }
 	.tab-page .sectionBody,
-	.section .sectionBody {
+	.section .sectionBody,
+	.ui-tabs .sectionBody {
 		background: none repeat scroll 0 0 #F7F7F7;
 		border: 1px solid #ddd;
 		margin: 0 3px 15px;
@@ -881,7 +883,7 @@ a img {
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
 }
 
-.grid td, .grid th, .sectionBody td, .sectionBody th, .tab-page td, .tab-page th {
+.grid td, .grid th, .sectionBody td, .sectionBody th, .tab-page td, .tab-page th, .ui-tabs td, .ui-tabs th {
 	padding:3px 6px;
 }
 
@@ -1052,6 +1054,7 @@ a.hometblink:hover {
 /* -------------------------[ Top Navbar of snap in top menu bar layout ]--- */
 #topMenu {
 	background:url(images/misc/headers.jpg) repeat scroll 0 0 #23393C;
+	background-size: cover;
 }
 
 #Navcontainer {
@@ -1417,14 +1420,16 @@ a.hometblink:hover {
 	color:#c00;
 }
 
-.dynamic-tab-pane-control .tab-page {
+.dynamic-tab-pane-control .tab-page,
+.dynamic-tab-pane-control .ui-tabs {
 	clear:both;
 	background:#fff;
 	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
 	padding:20px 15px 14px!important;
 }
 
-.rtl .dynamic-tab-pane-control .tab-page {
+.rtl .dynamic-tab-pane-control .tab-page,
+.rtl .dynamic-tab-pane-control .ui-tabs {
 	position:inherit;
 /* critical adjustment for IE ul li Proper RTL demonstration */
 }
@@ -1496,7 +1501,8 @@ a.hometblink,a.hometblink img {
 #mainActionPages {
 	background: #f5f5f5 url(images/misc/mainbg.gif) repeat-x top;
 }
-.tab-page {
+.tab-page,
+.ui-tabs {
 	border: 1px solid #CCC;
 	border-radius: 0 0 5px 5px;
 }
@@ -1588,7 +1594,8 @@ table.sortabletable {
 	border:1px solid #567959;
 }
 
-fieldset.tab-page {
+fieldset.tab-page,
+fieldset.ui-tabs {
 	border:1px solid #e4e4e4!important;
 }
 
@@ -2131,4 +2138,10 @@ strong[style*='color:#EF1D1D'] {
 
 .selected strong[style*='color:#EF1D1D'] {
 	color:red!important;
+}
+
+#topMenu #topbar #sessTokenInput {
+	position: fixed;
+	top:-999em;
+	left:-999em;
 }
