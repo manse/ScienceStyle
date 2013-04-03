@@ -254,7 +254,7 @@ hr {
 #tocText,#buildText,#workText {
 	font-weight:700;
 	line-height:16px;
-	margin:0 15px;
+	margin:-7px 15px 0;
 	color:#FFF;
 }
 
@@ -779,7 +779,7 @@ a img {
 	margin-left:-5px;
 }
 #treeRoot>div div {
-	margin-left:-3px;
+	margin-left:-2px;
 }
 
 #treeHolder {
