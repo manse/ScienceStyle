@@ -1334,7 +1334,8 @@ a.hometblink:hover {
 	width:200px!important;
 	text-align:left;
 	color:#555;
-	font-size:1.2em;
+/* 	font-size:1.2em; */
+	font-size:0.9em;
 }
 
 .rtl .settings th {
