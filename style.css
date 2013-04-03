@@ -775,11 +775,17 @@ a img {
 #treeMenu * {
 	vertical-align:middle;
 }
+#treeRoot>div {
+	margin-left:-5px;
+}
+#treeRoot>div div {
+	margin-left:-3px;
+}
 
 #treeHolder {
 	cursor:default;
 	height:100%;
-	padding:5px 0 0;
+	padding:5px 0 0 5px;
 /* 	background: #f7f7f7; */
 	width: 299px !important;
 	line-height:1.3em;
