@@ -9,6 +9,8 @@
  * MODx version:   1.0.3
 */
 
+$modx->config['manager_menu_height'] = '73';
+
 $style_path = 'media/style/' . $modx->config['manager_theme'] . '/images/';
 
 $theme_base_path = MODX_MANAGER_PATH . 'media/style/' . $modx->config['manager_theme'] . '/';
