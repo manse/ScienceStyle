@@ -11,6 +11,54 @@
 
 $style_path = 'media/style/' . $modx->config['manager_theme'] . '/images/';
 
+$theme_base_path = MODX_MANAGER_PATH . 'media/style/' . $modx->config['manager_theme'] . '/';
+include_once($theme_base_path . 'sstyle.class.inc.php');
+$sstyle = new ScienceStyle;
+
+if($modx->hasPermission('new_document')||$modx->hasPermission('save_document')) {
+	$ph['imgsrc'] = $style_path . 'icons/32x/newdoc.png';
+	$ph['action'] = 'index.php?a=4';
+	$ph['alt']    = $_lang['add_resource'];
+	$ph['title']  = $_lang['add_resource'];
+	$src = $sstyle->makeIcon($ph);
+	$modx->setPlaceholder('NewDoc',$src);
+}
+
+if($modx->hasPermission('new_template') || $modx->hasPermission('edit_template') || $modx->hasPermission('new_snippet') || $modx->hasPermission('edit_snippet') || $modx->hasPermission('new_plugin') || $modx->hasPermission('edit_plugin') || $modx->hasPermission('manage_metatags')) {
+	$ph['imgsrc'] = $style_path . 'icons/32x/elements.png';
+	$ph['action'] = 'index.php?a=76';
+	$ph['alt']    = $_lang['element_management'];
+	$ph['title']  = $_lang['element_management'];
+	$src = $sstyle->makeIcon($ph);
+	$modx->setPlaceholder('Elements',$src);
+}
+
+if($modx->hasPermission('settings')) {
+	$ph['imgsrc'] = $style_path . 'icons/32x/settings.png';
+	$ph['action'] = 'index.php?a=17';
+	$ph['alt']    = $_lang['edit_settings'];
+	$ph['title']  = $_lang['edit_settings'];
+	$src = $sstyle->makeIcon($ph);
+	$modx->setPlaceholder('Settings',$src);
+}
+
+if($modx->hasPermission('bk_manager')) {
+	$ph['imgsrc'] = $style_path . 'icons/32x/backup.png';
+	$ph['action'] = 'index.php?a=93';
+	$ph['alt']    = $_lang['bk_manager'];
+	$ph['title']  = $_lang['backup'];
+	$src = $sstyle->makeIcon($ph);
+	$modx->setPlaceholder('Backup',$src);
+}
+if($modx->hasPermission('help')) {
+	$ph['imgsrc'] = $style_path . 'icons/32x/help.png';
+	$ph['action'] = 'index.php?a=9';
+	$ph['alt']    = $_lang['help'];
+	$ph['title']  = $_lang['help'];
+	$src = $sstyle->makeIcon($ph);
+	$modx->setPlaceholder('Help',$src);
+}
+
 // Tree Menu Toolbar
 $_style['add_doc_tree']             = '<img src="'.$style_path.'icons/folder_page_add.png" style="width:16px;height:16px" />';
 $_style['add_weblink_tree']         = '<img src="'.$style_path.'icons/link_add.png" style="width:16px;height:16px" />';
@@ -119,4 +167,3 @@ $_style['icons_help_large']         = $style_path.'icons/32x/help.png';
 $_style['ajax_loader']              = '<p>'.$_lang['loading_page'].'</p><p><img src="'.$style_path.'misc/ajax-loader.gif" alt="Please wait" /></p>';
 $_style['tx']                       = $style_path.'misc/_tx_.gif';
 $_style['icons_right_arrow']        = $style_path.'icons/circlerightarrow.gif';
-?>
