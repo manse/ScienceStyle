@@ -5,14 +5,14 @@
 
 	[+OnManagerWelcomePrerender+]
 	
-	<script>
+	<script type="text/javascript">
 		//set var to be used to remove the config tab
 		if('[+config_display+]' == 'none'){
 			var config_display = false;
 		}
 	</script>
 	
-	<div id="welcome-tabs" class="js-tabs">
+	<div id="tabs">
 		
 		<ul>
 			<li><a href="#tabHome">[+site_name+]</a></li>
@@ -41,11 +41,11 @@
 					</td>
 					<td valign="top">
 						[+OnManagerWelcomeHome+]
-						<span class="wm_button" style="border:0">[+SecurityIcon+]</span>
-						<span class="wm_button" style="border:0">[+WebUserIcon+]</span>
-						<span class="wm_button" style="border:0">[+ModulesIcon+]</span>
-						<span class="wm_button" style="border:0">[+ResourcesIcon+]</span>
-						<span class="wm_button" style="border:0">[+BackupIcon+]</span>
+                        [+NewDoc+]
+                        [+Elements+]
+                        [+Settings+]
+                        [+Backup+]
+                        [+Help+]
 						<br style="clear:both" /><br />
 						[+MessageInfo+]
 					</td>
