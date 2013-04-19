@@ -15,6 +15,10 @@ A manager theme for MODX Evo and ClipperCMS.
  * Login your MODX manager then go to Tools > Configuration > Interface & Features > Manager Theme. Choose "ScienceStyle" and save.
  
 ## Updates
+ 
+### 2013.04.19
+
+ * Compatible with MODX Evolution and ClipperCMS.
 
 ### 2013.03.26
 
